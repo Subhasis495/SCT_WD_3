@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Quiz Game</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Live Score -->
+<div class="score-display" style="display: none;">Score: <span id="liveScore">0</span></div>
+
+<!-- Start Screen -->
+<div class="start-container">
+    <h1>Quiz Game</h1>
+    <button id="startBtn">Start Quiz</button>
+</div>
+
+<!-- Loading Screen -->
+<div class="loading-container" style="display: none;">
+    <p>Loading questions...</p>
+</div>
+
+<!-- Quiz Screen -->
+<div class="quiz-container fade-in" style="display: none;">
+    <h2 id="question"></h2>
+    <div id="options" class="options"></div>
+    <p id="feedback"></p>
+    <div class="buttons">
+        <button id="prevBtn">Previous</button>
+        <button id="submitBtn">Submit</button>
+        <button id="nextBtn">Next</button>
+    </div>
+</div>
+
+<!-- End Screen -->
+<div class="end-container" style="display: none;">
+    <h2>Quiz Completed!</h2>
+    <p>Your final score is: <span id="finalScore">0</span></p>
+    <button id="restartBtn">Restart Quiz</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
